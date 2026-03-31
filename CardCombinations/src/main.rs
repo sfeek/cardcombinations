@@ -21,7 +21,7 @@ fn main() {
     let mut trial = 0;
     for i in 1..trials + 1 {
         trial = trial + get_yn(&format!("Enter trial #{} <Y/N>: ", i));
-        println!("Current probability: {}", round_to_decimal(trial as f64 / trials as f64 * 100.0,1));
+        print!("Current probability: {}       ", round_to_decimal(trial as f64 / trials as f64 * 100.0,1));
     }
 }
 
